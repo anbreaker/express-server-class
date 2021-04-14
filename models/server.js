@@ -24,6 +24,9 @@ class Server {
 
     // Https views
     this.app.use(morgan('dev'));
+
+    // Directorio ficheros Estaticos
+    this.app.use(express.static('public'));
   }
 
   routes() {
